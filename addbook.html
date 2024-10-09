@@ -37,26 +37,26 @@
       <main>
         <section>
             <div class="container">
-                <h1 class="mb-4">
+                <h1 class="my-4">
                     Nuovo Libro
                 </h1>
                 <div class="row flex-wrap justify-content-between">
                     <div class="col-6">
                         <label class="d-block mb-2 fw-semibold fs-5" for="name">Nome Autore</label>
-                        <input class="form-control" type="text" placeholder="Inerisci il nome dell'autore">
+                        <input class="form-control" type="text" placeholder="Inerisci il nome dell'autore" name="name">
                     </div>
                     <div class="col-6">
-                        <label class="d-block mb-2 fw-semibold fs-5" for="name">Cognome Autore</label>
-                        <input class="form-control" type="text" placeholder="Inerisci il cognome dell'autore">
+                        <label class="d-block mb-2 fw-semibold fs-5" for="surname">Cognome Autore</label>
+                        <input class="form-control" type="text" placeholder="Inerisci il cognome dell'autore" name="surname">
                     </div>
                     <div class="col-12">
                         <label class="d-block mb-2 fw-semibold fs-5 mt-4" for="title">Titolo</label>
-                        <input class="form-control" type="text" placeholder="Inserisci il titolo del libro">
+                        <input class="form-control" type="text" placeholder="Inserisci il titolo del libro" name="title">
                         <span>Titolo versione italiana</span>
                     </div>
                     <div class="col-4">
-                        <label class="d-block mb-2 fw-semibold fs-5 mt-4" for="name">Genere</label>
-                        <select class="form-select">
+                        <label class="d-block mb-2 fw-semibold fs-5 mt-4" for="gender">Genere</label>
+                        <select class="form-select" name="gender">
                             <option selected>Scegli il genere</option>
                             <option value="1">Uomo</option>
                             <option value="2">Donna</option>
@@ -65,20 +65,20 @@
                     </div>
                     
                     <div class="col-4">
-                        <label class="d-block mb-2 fw-semibold fs-5 mt-4" for="name">Anno di Pubblicazione</label>
-                        <input class="form-control" type="text" placeholder="Inserisci l'anno">
+                        <label class="d-block mb-2 fw-semibold fs-5 mt-4" for="year">Anno di Pubblicazione</label>
+                        <input class="form-control" type="text" placeholder="Inserisci l'anno"name="year">
                     </div>
                     <div class="col-4">
-                        <label class="d-block mb-2 fw-semibold fs-5 mt-4" for="name">ISBN#</label>
-                        <input class="form-control" type="text" placeholder="Inserisci il codice ISBN#">
+                        <label class="d-block mb-2 fw-semibold fs-5 mt-4" for="isbn">ISBN#</label>
+                        <input class="form-control" type="text" placeholder="Inserisci il codice ISBN#"name="isbn">
                     </div>
                 </div>
                 <div class="border-top  border-secondary-subtle mt-5">
-                    <label class="d-block mb-2 fw-semibold fs-5 mt-3" for="name">Note</label>
-                    <textarea class="form-control form-control-lg mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+                    <label class="d-block mb-2 fw-semibold fs-5 mt-3" for="notes">Note</label>
+                    <textarea class="form-control form-control-lg mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Inserisci eventuali note sul libro"name="notes"></textarea>
                 </div>
                 <div>
-                    <input class="form-check-input mt-1" type="checkbox" value="" aria-label="Checkbox for following text input"> Disponibile anche in digitale   
+                    <input class="form-check-input mt-1" type="checkbox" value="" aria-label="Checkbox for following text input"name="digital"> Disponibile anche in digitale   
                 </div>
                 <div>
                     <button class="btn btn-primary btn-sm mt-3">Aggiungi libro</button>
